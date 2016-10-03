@@ -76,7 +76,11 @@ define(["jquery", "text!./clustermap.css","./d3.v3.min", "./clustermapUtils"], f
 
             var self = this;  
             
-            var backgroundImage = layout.backgroundImage;
+            var backgroundImage = layout.backgroundImage,
+              xMin = layout.xMin,
+              xMax = layout.xMax,
+              yMin = layout.yMin,
+              yMax = layout.yMax;
 
             senseUtils.extendLayout(layout, self);
             
@@ -90,7 +94,7 @@ define(["jquery", "text!./clustermap.css","./d3.v3.min", "./clustermapUtils"], f
 });
 
 
-var viz = function($element, layout, _this, backgroundImage) {
+var viz = function($element, layout, _this, backgroundImage, xMin, xMax, yMin, yMax) {
   var id = senseUtils.setupContainer($element,layout,"clustermap"),
     ext_width = $element.width(),
     ext_height = $element.height(),
