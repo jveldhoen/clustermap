@@ -1,0 +1,54 @@
+rect {
+  fill: transparent;
+  shape-rendering: crispEdges;
+}
+
+.highlight {
+  stroke-width: 2.5 !important;
+  stroke: red !important;
+  border: solid 2.5px red !important;
+  /*fill: #4682B4 !important;*/
+  opacity: 1 !important;
+  transition: stroke 250ms;
+  transition: stroke-width 250ms;
+  transition: border 250ms;
+  transition: opacity 250ms;
+}
+
+.dim {
+  opacity: 0.4;
+  transition: opacity 250ms;
+}
+
+.clustermap {
+  font: 12px sans-serif;
+}
+
+.clustermap .axis path,
+.clustermap .axis line {
+  fill: none;
+  stroke: rgba(0, 0, 0, 0.1);
+  shape-rendering: crispEdges;
+}
+
+.dot {
+  fill-opacity: .9;
+}
+
+.backgroundImage {
+  background-image: no-repeat;
+  background-size: 100%;
+  /*height: auto;
+  width: 100%;*/
+  /*background-position: left top;*/
+}
+
+.kpivalue {
+  /*color: #F0EBFF;*/
+  fill: #F0EBFF;
+  font-family: "Open Sans Extrabold", "Arial Black";
+  font-size: 15px;
+  text-anchor: middle;
+  vertical-align: middle;
+  text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+}
